@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Arenashop</title>
     <%= csrf_meta_tags %>
@@ -9,7 +9,22 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= controller_name %> <%= action_name%>">
+    <%= render 'layouts/header' %>
+      
+      <div class="container">
+        <div class="row-main">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="flash"><%#= bootstrap_flash %></div>
+                <p class="notice"><%#= notice %></p>
+                <p class="alert"><%#= alert %></p>
+          </div>  
+          
+          
+          <%= yield %>
+          
+        </div><!--/row-->
+      </div> <!-- /container -->
   </body>
 </html>
+
