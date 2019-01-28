@@ -41,6 +41,10 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 # security
 gem 'devise', '~> 4.2'
 
+# forms
+gem 'simple_form', '~> 4.1'
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
