@@ -5,6 +5,9 @@ Rails.application.routes.draw do
         #passwords: 'users/passwords',
         #shared: 'users/shared'
       #}
+  resources :categories, only: [:index] do
+    resources :products, only: [:index]
+  end
   
   root to: 'categories#index'
   
