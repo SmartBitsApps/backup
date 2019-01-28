@@ -41,8 +41,14 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 # security
 gem 'devise', '~> 4.2'
 
+# for translate (i18n)
+gem 'devise-i18n', '~> 1.7', '>= 1.7.1'
+gem 'rails-i18n', '~> 5.1', '>= 5.1.2'
+
 # forms
 gem 'simple_form', '~> 4.1'
+
+
 
 
 # Reduces boot times through caching; required in config/boot.rb

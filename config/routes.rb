@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   
-  devise_for :users, controllers: {
-        sessions: 'users/sessions'
-      }
+  devise_for :users#, controllers: {
+        #sessions: 'users/sessions',
+        #passwords: 'users/passwords',
+        #shared: 'users/shared'
+      #}
   
   
   root 'pages#index'
