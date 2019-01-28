@@ -64,7 +64,7 @@ Rails.application.configure do
   
   
   # i18n translation change -> :cs
-  config.i18n.available_locales = :cs
+  config.i18n.available_locales = [:en, :cs]
   config.i18n.default_locale = :cs
   
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
